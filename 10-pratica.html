@@ -49,7 +49,6 @@
     }
     .column {
       flex-direction: column;
-      float: left;
     }
     .row-reverse {
       flex-direction: row-reverse;
@@ -153,34 +152,57 @@
     .w200 {
       width: 200px;
     }
+    .o1 {
+      order: 1;
+    }
+    .o2 {
+      order: 2;
+    }
+    .o3 {
+      order: 3;
+    }
+    .o4 {
+      order: 4;
+    }
+    .o5 {
+      order: 5;
+    }
 
   </style>
   <title>Document</title>
 </head>
 <body>
-  <h1>flex 1</h1>
+  <h1>order 0</h1>
   <div class="flex">
     <div class="item blue flex1">1</div>
     <div class="item blue flex1">2</div>
-    <div class="item blue flex1">33333333333 33333333333333</div>
-    <div class="item blue flex1">33333333333 33333333333333</div>
+    <div class="item blue flex1">3</div>
+    <div class="item blue flex1">4</div>
     <div class="item blue flex1">5</div>
   </div> 
-  <h1>flex 2</h1>
+  <h1>ordens diferentes</h1>
   <div class="flex">
+    <div class="item blue flex1 o4">1</div>
+    <div class="item blue flex1 o3">2</div>
+    <div class="item blue flex1 o1">3</div>
+    <div class="item blue flex1 o5">4</div>
+    <div class="item blue flex1 o2">5</div>
+  </div> 
+  <h1>order 0 (column)</h1>
+  <div class="flex column">
     <div class="item blue flex1">1</div>
-    <div class="item blue flex2">2</div>
-    <div class="item blue flex2">33333333333 33333333333333</div>
-    <div class="item blue flex1">33333333333 33333333333333</div>
+    <div class="item blue flex1">2</div>
+    <div class="item blue flex1">3</div>
+    <div class="item blue flex1">4</div>
     <div class="item blue flex1">5</div>
-  </div>  
-  <h1>width ignorado</h1>
-  <div class="flex">
-    <div class="item blue flex1 w200">1</div>
-    <div class="item blue flex1 w200">2</div>
-    <div class="item blue flex1 w200">33333333333 33333333333333</div>
-    <div class="item blue flex1 w200">33333333333 33333333333333</div>
-    <div class="item blue flex1 w200">5</div>
-  </div>  
+  </div> 
+  <h1>ordens diferentes (column)</h1>
+  <div class="flex column">
+    <div class="item blue flex1 o4">1</div>
+    <div class="item blue flex1 o3">2</div>
+    <div class="item blue flex1 o1">3</div>
+    <div class="item blue flex1 o5">4</div>
+    <div class="item blue flex1 o2">5</div>
+  </div> 
 </body>
 </html>
