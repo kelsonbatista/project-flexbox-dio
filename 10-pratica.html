@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <style>
+    .flex {
+      display: flex;
+      max-width: 600px;
+      /* height: 100px; */
+      border: 2px solid black;
+      margin-bottom: 40px;
+      /* width: 100vw; */
+    }
+    .display-flex {
+      display: flex;
+    }
+    .space-between {
+      justify-content: space-between;
+    }
+    .item {
+      height: 50px;
+      min-width: 50px;
+      line-height: 50px;
+      list-style: none;
+      margin: 5px;
+      color: white;
+      font-weight: 600;
+      font-size: 18px;
+      text-align: center;
+      /* flex: 1; */
+    }
+    .blue {
+      background: blue;
+    }
+    .red {
+      background: red;
+    }
+    .orange {
+      background: orange;
+    }
+    .green {
+      background: green;
+      float: right;
+    }
+    .row {
+      flex-direction: row;
+    }
+    .column {
+      flex-direction: column;
+      float: left;
+    }
+    .row-reverse {
+      flex-direction: row-reverse;
+    }
+    .column-reverse {
+      flex-direction: column-reverse;
+      float: right;
+    }
+    .wrap {
+      flex-wrap: wrap;
+    }
+    .nowrap {
+      flex-wrap: nowrap;
+    }
+    .wrap-reverse {
+      flex-wrap: wrap-reverse;
+    }
+    .flow-wrap {
+      flex-flow: row wrap;
+    }
+    .flow-nowrap {
+      flex-flow: row nowrap;
+    }
+    .space-between {
+      justify-content: space-between;
+    }
+    .space-around {
+      justify-content: space-around;
+    }
+    .space-evenly {
+      justify-content: space-evenly;
+    }
+    .start {
+      justify-content: start;
+    }
+    .end {
+      justify-content: end;
+    }
+    .center {
+      align-content: center;
+    }
+    .stretch {
+      align-content: stretch;
+    }
+    .start {
+      align-content: flex-start;
+    }
+    .end {
+      align-content: flex-end;
+    }
+    .between {
+      align-content: space-between;
+    }
+    .around {
+      align-content: space-around;
+    }
+    .central {
+      height: 400px;
+      justify-content: center;
+    }
+    .central .item {
+      flex: 0;
+      padding: 10px;
+    }
+    .grow0 {
+      flex-grow: 0;
+    }
+    .grow1 {
+      flex-grow: 1;
+    }
+    .grow2 {
+      flex-grow: 2;
+    }
+    .grow3 {
+      flex-grow: 3;
+    }
+    .bauto {
+      flex-basis: auto;
+    }
+    .b0 {
+      flex-basis: 0;
+    }
+    .bw {
+      flex-basis: 100px;
+    }
+    .s1 {
+      flex-shrink: 1;
+    }
+    .s0 {
+      flex-shrink: 0;
+      flex-basis: 200px;
+    }
+    .flex1 {
+      flex: 1; /* grow=1 shrink=1 basis=0 */
+      /* basis 0 = continua crescendo sem quebrar linha*/
+    }
+    .flex2 {
+      flex: 2; /* grow=2 shrink=1 basis=0 */
+      /* basis 0 = continua crescendo sem quebrar linha*/
+    }
+    .w200 {
+      width: 200px;
+    }
+
+  </style>
+  <title>Document</title>
+</head>
+<body>
+  <h1>flex 1</h1>
+  <div class="flex">
+    <div class="item blue flex1">1</div>
+    <div class="item blue flex1">2</div>
+    <div class="item blue flex1">33333333333 33333333333333</div>
+    <div class="item blue flex1">33333333333 33333333333333</div>
+    <div class="item blue flex1">5</div>
+  </div> 
+  <h1>flex 2</h1>
+  <div class="flex">
+    <div class="item blue flex1">1</div>
+    <div class="item blue flex2">2</div>
+    <div class="item blue flex2">33333333333 33333333333333</div>
+    <div class="item blue flex1">33333333333 33333333333333</div>
+    <div class="item blue flex1">5</div>
+  </div>  
+  <h1>width ignorado</h1>
+  <div class="flex">
+    <div class="item blue flex1 w200">1</div>
+    <div class="item blue flex1 w200">2</div>
+    <div class="item blue flex1 w200">33333333333 33333333333333</div>
+    <div class="item blue flex1 w200">33333333333 33333333333333</div>
+    <div class="item blue flex1 w200">5</div>
+  </div>  
+</body>
+</html>
