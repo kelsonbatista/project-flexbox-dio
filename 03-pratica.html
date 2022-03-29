@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <style>
+    .flex {
+      display: flex;
+      max-width: 330px;
+      border: 2px solid black;
+      margin-bottom: 40px;
+    }
+    .space-between {
+      justify-content: space-between;
+    }
+    .item {
+      height: 50px;
+      min-width: 50px;
+      line-height: 50px;
+      list-style: none;
+      margin: 5px;
+      color: white;
+      font-weight: 600;
+      font-size: 18px;
+      text-align: center;
+    }
+    .blue {
+      background: blue;
+    }
+    .red {
+      background: red;
+    }
+    .orange {
+      background: orange;
+    }
+    .green {
+      background: green;
+      float: right;
+    }
+    .row {
+      flex-direction: row;
+    }
+    .column {
+      flex-direction: column;
+      float: left;
+    }
+    .row-reverse {
+      flex-direction: row-reverse;
+    }
+    .column-reverse {
+      flex-direction: column-reverse;
+      float: right;
+    }
+    .wrap {
+      flex-wrap: wrap;
+    }
+    .nowrap {
+      flex-wrap: nowrap;
+    }
+    .wrap-reverse {
+      flex-wrap: wrap-reverse;
+    }
+    .flow-wrap {
+      flex-flow: row wrap;
+    }
+    .flow-nowrap {
+      flex-flow: row nowrap;
+    }
+
+  </style>
+  <title>Document</title>
+</head>
+<body>
+  <h1>flow wrap</h1>
+  <div class="flex flow-wrap space-between">
+    <div class="item blue">1</div>
+    <div class="item blue">2</div>
+    <div class="item blue">3</div>
+    <div class="item blue">4</div>
+    <div class="item blue">5</div>
+    <div class="item blue">6</div>
+    <div class="item blue">7</div>
+    <div class="item blue">8</div>
+    <div class="item blue">9</div>
+    <div class="item blue">0</div>
+  </div>  
+  <h1>flow no-wrap</h1>
+  <div class="flex flow-nowrap space-between">
+    <div class="item blue">1</div>
+    <div class="item blue">2</div>
+    <div class="item blue">3</div>
+    <div class="item blue">4</div>
+    <div class="item blue">5</div>
+    <div class="item blue">6</div>
+    <div class="item blue">7</div>
+    <div class="item blue">8</div>
+    <div class="item blue">9</div>
+    <div class="item blue">0</div>
+  </div>  
+</body>
+</html>

@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <style>
+    .flex {
+      display: flex;
+    }
+    .item {
+      height: 50px;
+      width: 50px;
+      line-height: 50px;
+      list-style: none;
+      margin: 5px;
+      color: white;
+      font-weight: 600;
+      font-size: 18px;
+      text-align: center;
+    }
+    .blue {
+      background: blue;
+    }
+    .red {
+      background: red;
+    }
+    .orange {
+      background: orange;
+    }
+    .green {
+      background: green;
+      float: right;
+    }
+    .row {
+      flex-direction: row;
+    }
+    .column {
+      flex-direction: column;
+      float: left;
+    }
+    .row-reverse {
+      flex-direction: row-reverse;
+    }
+    .column-reverse {
+      flex-direction: column-reverse;
+      float: right;
+    }
+
+  </style>
+  <title>Document</title>
+</head>
+<body>
+  <ul class="flex row">
+    <li class="item blue">1</li>
+    <li class="item blue">2</li>
+    <li class="item blue">3</li>
+    <li class="item blue">4</li>
+    <li class="item blue">5</li>
+  </ul>  
+  <ul class="flex row-reverse">
+    <li class="item red">1</li>
+    <li class="item red">2</li>
+    <li class="item red">3</li>
+    <li class="item red">4</li>
+    <li class="item red">5</li>
+  </ul>
+  <ul class="flex column">
+    <li class="item orange">1</li>
+    <li class="item orange">2</li>
+    <li class="item orange">3</li>
+    <li class="item orange">4</li>
+    <li class="item orange">5</li>
+  </ul>  
+  <ul class="flex column-reverse">
+    <li class="item green">1</li>
+    <li class="item green">2</li>
+    <li class="item green">3</li>
+    <li class="item green">4</li>
+    <li class="item green">5</li>
+  </ul>
+</body>
+</html>
