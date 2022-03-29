@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <style>
+    .flex {
+      display: flex;
+      /* max-width: 330px; */
+      height: 400px;
+      border: 2px solid black;
+      margin-bottom: 40px;
+      width: 100vw;
+    }
+    .display-flex {
+      display: flex;
+    }
+    .space-between {
+      justify-content: space-between;
+    }
+    .item {
+      /* min-height: 50px; */
+      min-width: 150px;
+      /* line-height: 50px; */
+      list-style: none;
+      margin: 5px;
+      color: white;
+      font-weight: 600;
+      font-size: 18px;
+      text-align: center;
+      flex: 1;
+    }
+    .blue {
+      background: blue;
+    }
+    .red {
+      background: red;
+    }
+    .orange {
+      background: orange;
+    }
+    .green {
+      background: green;
+      float: right;
+    }
+    .row {
+      flex-direction: row;
+    }
+    .column {
+      flex-direction: column;
+      float: left;
+    }
+    .row-reverse {
+      flex-direction: row-reverse;
+    }
+    .column-reverse {
+      flex-direction: column-reverse;
+      float: right;
+    }
+    .wrap {
+      flex-wrap: wrap;
+    }
+    .nowrap {
+      flex-wrap: nowrap;
+    }
+    .wrap-reverse {
+      flex-wrap: wrap-reverse;
+    }
+    .flow-wrap {
+      flex-flow: row wrap;
+    }
+    .flow-nowrap {
+      flex-flow: row nowrap;
+    }
+    .space-between {
+      justify-content: space-between;
+    }
+    .space-around {
+      justify-content: space-around;
+    }
+    .space-evenly {
+      justify-content: space-evenly;
+    }
+    .start {
+      justify-content: start;
+    }
+    .end {
+      justify-content: end;
+    }
+    .center {
+      align-content: center;
+    }
+    .stretch {
+      align-content: stretch;
+    }
+    .start {
+      align-content: flex-start;
+    }
+    .end {
+      align-content: flex-end;
+    }
+    .between {
+      align-content: space-between;
+    }
+    .around {
+      align-content: space-around;
+    }
+    .central {
+      height: 400px;
+      justify-content: center;
+    }
+    .central .item {
+      flex: 0;
+      padding: 10px;
+    }
+
+  </style>
+  <title>Document</title>
+</head>
+<body>
+  <h1>content strech</h1>
+  <div class="flex wrap stretch">
+    <div class="item blue">Lorem</div>
+    <div class="item blue">Lorem ipsum dolor sit amet</div>
+    <div class="item blue">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dignissimos</div>
+    <div class="item blue">Lorem ipsum dolor sit amet consectetur adipisicing elit. A tenetur, voluptas, minima cupiditate enim dignissimos quas</div>
+    <div class="item blue">Lorem</div>
+    <div class="item blue">Lorem ipsum dolor sit amet</div>
+    <div class="item blue">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dignissimos</div>
+  </div>  
+  <h1>content center</h1>
+  <div class="flex wrap center">
+    <div class="item blue">Lorem</div>
+    <div class="item blue">Lorem ipsum dolor sit amet</div>
+    <div class="item blue">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dignissimos</div>
+    <div class="item blue">Lorem ipsum dolor sit amet consectetur adipisicing elit. A tenetur, voluptas, minima cupiditate enim dignissimos quas</div>
+    <div class="item blue">Lorem</div>
+    <div class="item blue">Lorem ipsum dolor sit amet</div>
+    <div class="item blue">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dignissimos</div>
+  </div>  
+  <h1>content start</h1>
+  <div class="flex wrap start">
+    <div class="item blue">Lorem</div>
+    <div class="item blue">Lorem ipsum dolor sit amet</div>
+    <div class="item blue">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dignissimos</div>
+    <div class="item blue">Lorem ipsum dolor sit amet consectetur adipisicing elit. A tenetur, voluptas, minima cupiditate enim dignissimos quas</div>
+    <div class="item blue">Lorem</div>
+    <div class="item blue">Lorem ipsum dolor sit amet</div>
+    <div class="item blue">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dignissimos</div>
+  </div> 
+  <h1>content end</h1>
+  <div class="flex wrap end">
+    <div class="item blue">Lorem</div>
+    <div class="item blue">Lorem ipsum dolor sit amet</div>
+    <div class="item blue">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dignissimos</div>
+    <div class="item blue">Lorem ipsum dolor sit amet consectetur adipisicing elit. A tenetur, voluptas, minima cupiditate enim dignissimos quas</div>
+    <div class="item blue">Lorem</div>
+    <div class="item blue">Lorem ipsum dolor sit amet</div>
+    <div class="item blue">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dignissimos</div>
+  </div> 
+  <h1>content between</h1>
+  <div class="flex wrap between">
+    <div class="item blue">Lorem</div>
+    <div class="item blue">Lorem ipsum dolor sit amet</div>
+    <div class="item blue">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dignissimos</div>
+    <div class="item blue">Lorem ipsum dolor sit amet consectetur adipisicing elit. A tenetur, voluptas, minima cupiditate enim dignissimos quas</div>
+    <div class="item blue">Lorem</div>
+    <div class="item blue">Lorem ipsum dolor sit amet</div>
+    <div class="item blue">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dignissimos</div>
+  </div> 
+  <h1>content around</h1>
+  <div class="flex wrap around">
+    <div class="item blue">Lorem</div>
+    <div class="item blue">Lorem ipsum dolor sit amet</div>
+    <div class="item blue">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dignissimos</div>
+    <div class="item blue">Lorem ipsum dolor sit amet consectetur adipisicing elit. A tenetur, voluptas, minima cupiditate enim dignissimos quas</div>
+    <div class="item blue">Lorem</div>
+    <div class="item blue">Lorem ipsum dolor sit amet</div>
+    <div class="item blue">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dignissimos</div>
+  </div> 
+</body>
+</html>
