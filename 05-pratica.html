@@ -103,6 +103,14 @@
     .align-baseline {
       align-items: baseline;
     }
+    .central {
+      height: 400px;
+      justify-content: center;
+    }
+    .central .item {
+      flex: 0;
+      padding: 10px;
+    }
 
   </style>
   <title>Document</title>
@@ -143,6 +151,9 @@
     <div class="item blue">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dignissimos</div>
     <div class="item blue">Lorem ipsum dolor sit amet consectetur adipisicing elit. A tenetur, voluptas, minima cupiditate enim dignissimos quas</div>
   </div> 
- 
+  <h1>align central</h1>
+  <div class="flex central align-center">
+    <div class="item blue">Lorem ipsum dolor sit amet consectetur adipisicing elit. A tenetur, voluptas, minima cupiditate enim dignissimos quas</div>
+  </div> 
 </body>
 </html>
