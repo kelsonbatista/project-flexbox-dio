@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <style>
+    .flex {
+      display: flex;
+      /* max-width: 330px; */
+      height: 200px;
+      border: 2px solid black;
+      margin-bottom: 40px;
+      width: 100vw;
+    }
+    .display-flex {
+      display: flex;
+    }
+    .space-between {
+      justify-content: space-between;
+    }
+    .item {
+      /* min-height: 50px; */
+      min-width: 150px;
+      /* line-height: 50px; */
+      list-style: none;
+      margin: 5px;
+      color: white;
+      font-weight: 600;
+      font-size: 18px;
+      text-align: center;
+      flex: 1;
+    }
+    .blue {
+      background: blue;
+    }
+    .red {
+      background: red;
+    }
+    .orange {
+      background: orange;
+    }
+    .green {
+      background: green;
+      float: right;
+    }
+    .row {
+      flex-direction: row;
+    }
+    .column {
+      flex-direction: column;
+      float: left;
+    }
+    .row-reverse {
+      flex-direction: row-reverse;
+    }
+    .column-reverse {
+      flex-direction: column-reverse;
+      float: right;
+    }
+    .wrap {
+      flex-wrap: wrap;
+    }
+    .nowrap {
+      flex-wrap: nowrap;
+    }
+    .wrap-reverse {
+      flex-wrap: wrap-reverse;
+    }
+    .flow-wrap {
+      flex-flow: row wrap;
+    }
+    .flow-nowrap {
+      flex-flow: row nowrap;
+    }
+    .space-between {
+      justify-content: space-between;
+    }
+    .space-around {
+      justify-content: space-around;
+    }
+    .space-evenly {
+      justify-content: space-evenly;
+    }
+    .start {
+      justify-content: start;
+    }
+    .end {
+      justify-content: end;
+    }
+    .align-center {
+      align-items: center;
+    }
+    .align-stretch {
+      align-items: stretch;
+    }
+    .align-start {
+      align-items: flex-start;
+    }
+    .align-end {
+      align-items: flex-end;
+    }
+    .align-baseline {
+      align-items: baseline;
+    }
+
+  </style>
+  <title>Document</title>
+</head>
+<body>
+  <h1>align center</h1>
+  <div class="flex align-center">
+    <div class="item blue">1</div>
+    <div class="item blue">Lorem ipsum dolor sit amet</div>
+    <div class="item blue">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dignissimos</div>
+    <div class="item blue">Lorem ipsum dolor sit amet consectetur adipisicing elit. A tenetur, voluptas, minima cupiditate enim dignissimos quas</div>
+  </div>  
+  <h1>align stretch</h1>
+  <div class="flex align-stretch">
+    <div class="item blue">1</div>
+    <div class="item blue">Lorem ipsum dolor sit amet</div>
+    <div class="item blue">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dignissimos</div>
+    <div class="item blue">Lorem ipsum dolor sit amet consectetur adipisicing elit. A tenetur, voluptas, minima cupiditate enim dignissimos quas</div>
+  </div> 
+  <h1>align start</h1>
+  <div class="flex align-start">
+    <div class="item blue">1</div>
+    <div class="item blue">Lorem ipsum dolor sit amet</div>
+    <div class="item blue">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dignissimos</div>
+    <div class="item blue">Lorem ipsum dolor sit amet consectetur adipisicing elit. A tenetur, voluptas, minima cupiditate enim dignissimos quas</div>
+  </div> 
+  <h1>align end</h1>
+  <div class="flex align-end">
+    <div class="item blue">1</div>
+    <div class="item blue">Lorem ipsum dolor sit amet</div>
+    <div class="item blue">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dignissimos</div>
+    <div class="item blue">Lorem ipsum dolor sit amet consectetur adipisicing elit. A tenetur, voluptas, minima cupiditate enim dignissimos quas</div>
+  </div> 
+  <h1>align baseline</h1>
+  <div class="flex align-baseline">
+    <div class="item blue">1</div>
+    <div class="item blue">Lorem ipsum dolor sit amet</div>
+    <div class="item blue">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dignissimos</div>
+    <div class="item blue">Lorem ipsum dolor sit amet consectetur adipisicing elit. A tenetur, voluptas, minima cupiditate enim dignissimos quas</div>
+  </div> 
+ 
+</body>
+</html>
